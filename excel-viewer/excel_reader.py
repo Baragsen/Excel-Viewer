@@ -16,6 +16,3 @@ def get_height(path):
 def get_rows(path) :
     df = excel_to_df(path)
     return df.map(lambda x: x.strftime('%Y-%m-%d') if isinstance(x, pd.Timestamp) else x).values.tolist()
-
-# print(get_rows(r"C:\Users\Nizar\excel_gui\SampleData.xlsx"))
-# print(excel_to_df(r"C:\Users\Nizar\excel_gui\SampleData.xlsx"))

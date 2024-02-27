@@ -7,7 +7,7 @@ import os.path
 
 app = tk.Tk()
 app.geometry("800x600")
-app.tk.call("source" , "forest-dark.tcl")
+app.tk.call("source" , "../forest-dark.tcl")
 
 style = ttk.Style(app)
 style.theme_use("forest-dark")
